@@ -185,11 +185,15 @@ const Contact = () => {
                 <a href="tel:+13124091816" className="text-sm text-white/90 font-medium flex items-center gap-2 leading-relaxed tracking-wide hover:text-blue-400 transition-colors mb-1">
                   <FiPhone className="text-blue-300 text-base" /> +1 (312) 409-1816 <span className="text-xs text-blue-200 ml-1">(24/7 Available)</span>
                 </a>
-                {/* Trust Badges */}
-                <div className="flex items-center gap-2 mt-2 flex-wrap justify-center">
-                  <span className="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-xl text-xs text-white/80 border border-white/10"><FiAward className="text-blue-300 text-base" /> ISO Certified</span>
-                  <span className="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-xl text-xs text-white/80 border border-white/10"><FiShield className="text-green-300 text-base" /> HIPAA Compliant</span>
-                  <span className="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-xl text-xs text-white/80 border border-white/10"><FaRegCheckCircle className="text-cyan-300 text-base" /> Secure</span>
+                {/* Compliance Text */}
+                <div className="mt-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <FiShield className="text-white/60 text-base" />
+                    <span className="text-xs text-white/60 font-light tracking-wide">Security & Compliance</span>
+                  </div>
+                  <p className="text-xs text-white/50 font-light leading-relaxed tracking-wide max-w-[280px]">
+                    Neuralyn is built on secure, HIPAA-ready, ISO-compliant cloud infrastructure. All compliance processes are currently under review for formal certification.
+                  </p>
                 </div>
               </div>
               {/* Socials at the bottom, always aligned bottom */}
