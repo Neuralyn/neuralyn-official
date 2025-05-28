@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import NeuralynBrainLogo from './NeuralynBrainLogo';
+import { Link } from 'react-router-dom';
 
 const OrangeParticles = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -51,6 +52,14 @@ const Hero = ({ triggerIntro }) => {
     'Products',
     'HealMind_AI',
     'Contact',
+  ];
+
+  const specialLinks = [
+    { label: 'Investors', path: '/investors' },
+    { label: 'Founder', path: '/founder' },
+    { label: 'Roadmap', path: '/roadmap' },
+    { label: 'Media/Press', path: '/media' },
+    { label: 'Blog', path: '/blog' },
   ];
 
   return (
@@ -124,29 +133,34 @@ const Hero = ({ triggerIntro }) => {
       </div>
       {/* Left-side vertical section names (not clickable, animated) */}
       <motion.div
-        className="absolute left-8 top-1/4 z-10 flex flex-col space-y-2 text-left select-none"
+        className="absolute left-8 top-1/2 -translate-y-1/2 z-10 flex flex-col space-y-2 text-left select-none hidden md:flex h-[220px] justify-center"
         initial="hidden"
         animate="visible"
         variants={{
           visible: { transition: { staggerChildren: 0.13, delayChildren: 0.5 } },
         }}
       >
-        {sectionNames.map((name, i) => (
-          <motion.span
-            key={name}
-            className="text-white/60 text-base font-light tracking-wide"
+        {specialLinks.map((item, i) => (
+          <motion.div
+            key={item.label}
             variants={{
               hidden: { opacity: 0, x: -32 },
               visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: 'easeOut' } },
             }}
           >
-            {name}
-          </motion.span>
+            <Link
+              to={item.path}
+              className="text-white/60 hover:text-cyan-300 text-base font-medium tracking-wide transition-colors duration-200 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-cyan-400 font-sans"
+              style={{ letterSpacing: '0.01em' }}
+            >
+              {item.label}
+            </Link>
+          </motion.div>
         ))}
       </motion.div>
       {/* Soft description at bottom left (animated) */}
       <motion.div
-        className="absolute left-8 bottom-8 z-10 max-w-xs text-left select-none"
+        className="absolute left-8 bottom-8 z-10 max-w-xs text-left select-none hidden md:block"
         initial={{ opacity: 0, x: -32 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.9, delay: 1.3, ease: 'easeOut' }}

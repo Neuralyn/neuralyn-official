@@ -30,6 +30,10 @@ import Terms from './pages/terms';
 import Privacy from './pages/privacy';
 import Security from './pages/security';
 import Sitemap from './pages/sitemap';
+import Investors from './pages/investors';
+import Founder from './pages/founder';
+import Roadmap from './pages/roadmap';
+import Media from './pages/media';
 
 console.log('App component is mounting');
 
@@ -94,9 +98,13 @@ function App() {
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/security" element={<Security />} />
               <Route path="/sitemap" element={<Sitemap />} />
+              <Route path="/investors" element={<Investors />} />
+              <Route path="/founder" element={<Founder />} />
+              <Route path="/roadmap" element={<Roadmap />} />
+              <Route path="/media" element={<Media />} />
             </Routes>
             <Footer />
-    </>
+          </>
         )}
       </main>
     </BrowserRouter>

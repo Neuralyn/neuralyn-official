@@ -29,11 +29,11 @@ const Security = () => (
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2 text-blue-300">3. Responsible Disclosure</h2>
-        <p className="text-white/80 text-lg leading-relaxed">If you believe you have found a security vulnerability, please report it responsibly to <a href="mailto:neuralyn.ai@gmail.com" className="text-blue-400 underline">neuralyn.ai@gmail.com</a>. We appreciate your help in keeping Neuralyn secure.</p>
+        <p className="text-white/80 text-lg leading-relaxed">If you believe you have found a security vulnerability, please report it responsibly to <a href="mailto:support@neuralyn.health" className="text-blue-400 underline">support@neuralyn.health</a>. We appreciate your help in keeping Neuralyn secure.</p>
       </section>
       <section className="mb-2">
         <h2 className="text-2xl font-semibold mb-2 text-blue-300">4. Contact</h2>
-        <p className="text-white/80 text-lg leading-relaxed">For security-related questions, contact us at <a href="mailto:neuralyn.ai@gmail.com" className="text-blue-400 underline">neuralyn.ai@gmail.com</a>.</p>
+        <p className="text-white/80 text-lg leading-relaxed">For security-related questions, contact us at <a href="mailto:support@neuralyn.health" className="text-blue-400 underline">support@neuralyn.health</a>.</p>
       </section>
     </motion.div>
   </div>

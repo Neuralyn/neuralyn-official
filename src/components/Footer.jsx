@@ -95,7 +95,7 @@ const Footer = () => {
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-blue-500 transition-colors text-xl"><FiFacebook /></a>
               <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white/70 hover:text-red-500 transition-colors text-xl"><FiYoutube /></a>
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-white/70 hover:text-gray-300 transition-colors text-xl"><FiGithub /></a>
-              <a href="mailto:neuralyn.ai@gmail.com" aria-label="Email" className="text-white/70 hover:text-green-400 transition-colors text-xl"><FiMail /></a>
+              <a href="mailto:contact@neuralyn.health" aria-label="Email" className="text-white/70 hover:text-green-400 transition-colors text-xl"><FiMail /></a>
             </div>
           </div>
         </div>

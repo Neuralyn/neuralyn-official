@@ -84,7 +84,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-2 py-8 md:py-12 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-2 py-8 md:py-12 relative overflow-hidden pt-32 md:pt-24">
       {/* Film grain overlay */}
       <div className="absolute inset-0 pointer-events-none z-0" style={{ background: 'repeating-linear-gradient(0deg, #222 0px, #222 2px, transparent 2px, transparent 4px)', opacity: 0.07 }} />
       {/* Animated gradient overlays */}
@@ -179,8 +179,8 @@ const Contact = () => {
               {/* Contact Info section, grows to fill space */}
               <div className="w-full flex-1 flex flex-col items-center justify-center mb-6">
                 <h3 className="text-lg font-semibold tracking-wide mb-1 text-white/90 font-sans">Contact Information</h3>
-                <a href="mailto:neuralyn.ai@gmail.com" className="text-sm text-white/90 font-medium flex items-center gap-2 leading-relaxed tracking-wide hover:text-blue-400 transition-colors mb-1">
-                  <FiMail className="text-blue-300 text-base" /> neuralyn.ai@gmail.com
+                <a href="mailto:contact@neuralyn.health" className="text-sm text-white/90 font-medium flex items-center gap-2 leading-relaxed tracking-wide hover:text-blue-400 transition-colors mb-1">
+                  <FiMail className="text-blue-300 text-base" /> contact@neuralyn.health
                 </a>
                 <a href="tel:+13124091816" className="text-sm text-white/90 font-medium flex items-center gap-2 leading-relaxed tracking-wide hover:text-blue-400 transition-colors mb-1">
                   <FiPhone className="text-blue-300 text-base" /> +1 (312) 409-1816 <span className="text-xs text-blue-200 ml-1">(24/7 Available)</span>

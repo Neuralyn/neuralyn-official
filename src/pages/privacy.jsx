@@ -49,7 +49,7 @@ const Privacy = () => (
       </section>
       <section className="mb-2">
         <h2 className="text-2xl font-semibold mb-2 text-blue-300">8. Contact</h2>
-        <p className="text-white/80 text-lg leading-relaxed">For privacy questions, contact us at <a href="mailto:neuralyn.ai@gmail.com" className="text-blue-400 underline">neuralyn.ai@gmail.com</a>.</p>
+        <p className="text-white/80 text-lg leading-relaxed">For privacy questions, contact us at <a href="mailto:info@neuralyn.health" className="text-blue-400 underline">info@neuralyn.health</a>.</p>
       </section>
     </motion.div>
   </div>

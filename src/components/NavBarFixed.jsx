@@ -87,7 +87,8 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+              className="absolute inset-0 bg-gradient-to-br from-[#0a223a] via-black to-[#1e293b] backdrop-blur-xl border-l-2 border-cyan-400/20 shadow-[0_0_32px_0_rgba(45,224,252,0.10)]"
+              style={{ boxShadow: '0 0 64px 0 #2de0fc22, 0 0 0 1px #2de0fc11' }}
               onClick={() => setIsMobileMenuOpen(false)}
             />
             
@@ -102,21 +103,30 @@ const Navbar = () => {
               <div className="flex flex-col h-full">
                 <div className="flex-1 pt-16">
                   <ul className="space-y-6">
-                    {navItems.map((item, index) => (
+                    {[
+                      { id: 'home', label: 'Home', path: '/' },
+                      { id: 'about', label: 'About', path: '/about' },
+                      { id: 'mission', label: 'Mission', path: '/mission' },
+                      { id: 'products', label: 'Products', path: '/products' },
+                      { id: 'healmind', label: 'HealMind_AI', path: '/healmind' },
+                      { id: 'contact', label: 'Contact', path: '/contact' },
+                      { id: 'investors', label: 'Investors', path: '/investors' },
+                      { id: 'founder', label: 'Founder', path: '/founder' },
+                      { id: 'roadmap', label: 'Roadmap', path: '/roadmap' },
+                      { id: 'media', label: 'Media/Press', path: '/media' },
+                      { id: 'blog', label: 'Blog', path: '/blog' },
+                    ].map((item, index) => (
                       <motion.li
-                        key={item.id}
+                        key={item.id || item.label}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        transition={{ duration: 0.3, delay: index * 0.08 }}
                       >
                         <Link
                           to={item.path}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className={`block text-lg font-light tracking-wider transition-colors duration-300 ${
-                            location.pathname === item.path
-                              ? 'text-blue-400'
-                              : 'text-white/70 hover:text-white'
-                          }`}
+                          className={`block text-base font-medium tracking-wide transition-colors duration-200 px-2 py-1 rounded text-white/70 hover:text-cyan-300 font-sans ${location.pathname === item.path ? 'text-cyan-300' : ''}`}
+                          style={{ letterSpacing: '0.01em' }}
                         >
                           {item.label}
                         </Link>

@@ -1,8 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FiEdit3, FiBookOpen, FiFeather, FiPenTool } from 'react-icons/fi';
+import { FiRss, FiVideo, FiGlobe, FiCamera } from 'react-icons/fi';
 
-export default function Blog() {
+export default function Media() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a223a] via-black to-[#1e293b] flex flex-col items-center justify-center px-4 pt-24 pb-12 relative overflow-x-hidden font-sans">
       {/* Parallax/Geometric background accents */}
@@ -25,7 +24,7 @@ export default function Blog() {
           className="mb-8"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg animate-pulse">
-            Neuralyn Blog
+            Media & News
           </h1>
         </motion.div>
         <motion.div
@@ -48,35 +47,35 @@ export default function Blog() {
           >
             Coming Soon
           </motion.div>
-          {/* Floating Blog Icons */}
+          {/* Floating Media Icons */}
           <div className="flex gap-8 mt-4">
             <motion.div
               animate={{ y: [0, -18, 0] }}
               transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
               className="text-cyan-400 text-4xl drop-shadow-lg"
             >
-              <FiEdit3 />
+              <FiRss />
             </motion.div>
             <motion.div
               animate={{ y: [0, 18, 0] }}
               transition={{ duration: 2.2, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
               className="text-pink-400 text-4xl drop-shadow-lg"
             >
-              <FiBookOpen />
+              <FiVideo />
             </motion.div>
             <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 2.4, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
               className="text-yellow-400 text-4xl drop-shadow-lg"
             >
-              <FiFeather />
+              <FiGlobe />
             </motion.div>
             <motion.div
               animate={{ y: [0, 14, 0] }}
               transition={{ duration: 2.6, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
               className="text-blue-400 text-4xl drop-shadow-lg"
             >
-              <FiPenTool />
+              <FiCamera />
             </motion.div>
           </div>
         </motion.div>
