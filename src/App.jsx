@@ -96,7 +96,7 @@ function App() {
               <Route path="/sitemap" element={<Sitemap />} />
             </Routes>
             <Footer />
-          </>
+    </>
         )}
       </main>
     </BrowserRouter>
