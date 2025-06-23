@@ -63,7 +63,7 @@ export default function Investors() {
         <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent drop-shadow-lg">Invest in the Future of Healthcare AI</h1>
         <p className="text-lg md:text-2xl text-white/80 mb-8 font-light">Join Neuralyn on our mission to revolutionize global healthcare with emotionally intelligent AI. Be part of the next wave of world-changing innovation.</p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-          <a href="/Neuralyn_PitchDeck.pdf" download className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-500/90 hover:bg-blue-600 transition-colors text-white font-semibold shadow-lg text-lg"><FiDownload /> Download Pitch Deck</a>
+          <a href="/Neuralyn Pitch Deck.pdf" download className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-500/90 hover:bg-blue-600 transition-colors text-white font-semibold shadow-lg text-lg"><FiDownload /> Download Pitch Deck</a>
           <a href="https://calendly.com/neuralyn-ai/investor-meeting" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 transition-colors text-white font-semibold shadow-lg text-lg"><FiCalendar /> Request a Meeting</a>
         </div>
       </motion.div>
@@ -149,7 +149,7 @@ export default function Investors() {
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Investor Resources</h2>
         <div className="flex flex-col md:flex-row gap-8 mb-8">
-          <a href="/Neuralyn_PitchDeck.pdf" download className="flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-blue-500/90 hover:bg-blue-600 transition-colors text-white font-semibold shadow-lg text-lg"><FiDownload /> Download Pitch Deck</a>
+          <a href="/Neuralyn Pitch Deck.pdf" download className="flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-blue-500/90 hover:bg-blue-600 transition-colors text-white font-semibold shadow-lg text-lg"><FiDownload /> Download Pitch Deck</a>
           <a href="https://calendly.com/neuralyn-ai/investor-meeting" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 transition-colors text-white font-semibold shadow-lg text-lg"><FiCalendar /> Request a Meeting</a>
         </div>
         <div className="bg-white/5 border border-cyan-300/20 rounded-2xl p-6 shadow-lg">
