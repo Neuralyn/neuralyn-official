@@ -114,6 +114,32 @@ const HealMind = () => {
           className="text-center"
         >
           <motion.button
+            onClick={(e)=>{
+
+              // console.log('=== BUTTON CLICKED ===');
+              // console.log('Event:', e);
+              // console.log('Event type:', e.type);
+              // console.log('Target:', e.target);
+              
+              // Show alert to confirm button is working
+              // alert('Button clicked! Redirecting to HealMind...');
+              
+              // Simple redirect - try the most basic approach first
+              const url = 'https://healmind.neuralyn.health/';
+              console.log('Redirecting to:', url);
+          
+              // window.location.href = url;
+              // 
+              // Try window.open first
+              try {
+                window.open(url, '_blank');
+                console.log('window.open successful');
+              } catch (error) {
+                console.log('window.open failed, trying location.href:', error);
+                window.location.href = url;
+              }
+
+            }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-blue-500/20 backdrop-blur-md rounded-full text-white border border-blue-400/30 hover:bg-blue-500/30 transition-colors duration-300"

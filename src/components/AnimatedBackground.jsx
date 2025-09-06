@@ -86,22 +86,24 @@ const AnimatedBackground = ({ type }) => {
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        animate={{ 
+          opacity: 1,
+          backgroundPosition: ['0% 0%', '100% 100%'],
+        }}
+        transition={{ 
+          duration: 1,
+          backgroundPosition: {
+            duration: 20,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            ease: 'linear',
+          }
+        }}
         style={{
           background: type === 'hope' 
             ? 'linear-gradient(120deg, rgba(35, 37, 38, 0.8) 0%, rgba(109, 213, 237, 0.4) 100%)'
             : 'linear-gradient(120deg, rgba(35, 37, 38, 0.9) 0%, rgba(65, 67, 69, 0.7) 100%)',
           backgroundSize: '200% 200%',
-        }}
-        animate={{
-          backgroundPosition: ['0% 0%', '100% 100%'],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: 'reverse',
-          ease: 'linear',
         }}
       />
     </div>

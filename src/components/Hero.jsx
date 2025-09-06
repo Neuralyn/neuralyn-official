@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 
 const OrangeParticles = () => {
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
+    try {
+      await loadFull(engine);
+    } catch (error) {
+      console.warn('TSParticles initialization failed:', error);
+    }
   }, []);
 
   return (
