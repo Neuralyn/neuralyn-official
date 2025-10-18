@@ -113,6 +113,7 @@ const Navbar = () => {
                       { id: 'healmind', label: 'HealMind_AI', path: '/healmind' },
                       
                       // Company & Team
+                      { id: 'team', label: 'Team', path: '/team' },
                       { id: 'founder', label: 'Founder', path: '/founder' },
                       { id: 'investors', label: 'Investors', path: '/investors' },
                       
