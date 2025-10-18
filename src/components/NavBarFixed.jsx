@@ -9,6 +9,7 @@ const navItems = [
   { id: 'mission', label: 'Mission', path: '/mission' },
   { id: 'products', label: 'Products', path: '/products' },
   { id: 'healmind', label: 'HealMind_AI', path: '/healmind' },
+  { id: 'team', label: 'Team', path: '/team' },
   { id: 'contact', label: 'Contact', path: '/contact' },
 ];
 
@@ -104,17 +105,25 @@ const Navbar = () => {
                 <div className="flex-1 pt-16">
                   <ul className="space-y-6">
                     {[
+                      // Main Navigation
                       { id: 'home', label: 'Home', path: '/' },
                       { id: 'about', label: 'About', path: '/about' },
                       { id: 'mission', label: 'Mission', path: '/mission' },
                       { id: 'products', label: 'Products', path: '/products' },
                       { id: 'healmind', label: 'HealMind_AI', path: '/healmind' },
-                      { id: 'contact', label: 'Contact', path: '/contact' },
-                      { id: 'investors', label: 'Investors', path: '/investors' },
+                      
+                      // Company & Team
+                      { id: 'team', label: 'Team', path: '/team' },
                       { id: 'founder', label: 'Founder', path: '/founder' },
-                      { id: 'roadmap', label: 'Roadmap', path: '/roadmap' },
-                      { id: 'media', label: 'Media/Press', path: '/media' },
+                      { id: 'investors', label: 'Investors', path: '/investors' },
+                      
+                      // Resources & Media
                       { id: 'blog', label: 'Blog', path: '/blog' },
+                      { id: 'media', label: 'Media/Press', path: '/media' },
+                      { id: 'roadmap', label: 'Roadmap', path: '/roadmap' },
+                      
+                      // Contact
+                      { id: 'contact', label: 'Contact', path: '/contact' },
                     ].map((item, index) => (
                       <motion.li
                         key={item.id || item.label}

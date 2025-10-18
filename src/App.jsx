@@ -34,6 +34,7 @@ import Investors from './pages/investors';
 import Founder from './pages/founder';
 import Roadmap from './pages/roadmap';
 import Media from './pages/media';
+import Team from './pages/team';
 
 console.log('App component is mounting');
 
@@ -102,6 +103,7 @@ function App() {
               <Route path="/founder" element={<Founder />} />
               <Route path="/roadmap" element={<Roadmap />} />
               <Route path="/media" element={<Media />} />
+              <Route path="/team" element={<Team />} />
             </Routes>
             <Footer />
           </>

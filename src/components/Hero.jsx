@@ -55,6 +55,7 @@ const Hero = ({ triggerIntro }) => {
   ];
 
   const specialLinks = [
+    { label: 'Team', path: '/team' },
     { label: 'Investors', path: '/investors' },
     { label: 'Founder', path: '/founder' },
     { label: 'Roadmap', path: '/roadmap' },
